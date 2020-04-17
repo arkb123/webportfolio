@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --black-color: #2e2d2fe0;
+  --darkclack-color: #2e2d2f;
+  --orange-color: #eb8c66;
+}
+body {
+  background: rgb(167, 165, 198);
+  background: radial-gradient(
+    circle,
+    rgb(138, 134, 190) 50%,
+    rgba(61, 49, 91, 1) 100%
+  );
+}
+
+#temp {
+  background: rgb(167, 165, 198);
+  background: radial-gradient(
+    circle,
+    rgb(138, 134, 190) 50%,
+    rgba(61, 49, 91, 1) 100%
+  );
+}
+
+.container {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+.container2 {
+  display: block;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.info-box {
+  width: 40%;
+  max-height: 360px;
+  display: block;
+  margin-top: 6%;
+  margin-left: 10%;
+  background: #5f50858a;
+  -webkit-box-shadow: 1px 0px 42px 27px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 0px 42px 27px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0px 42px 27px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+}
+.info-box h3 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--orange-color);
+}
+.info-box p {
+  font-size: 1.2rem;
+  margin: 20px;
+  color: var(--darkclack-color);
+}
+.project-box {
+  width: 90%;
+  display: block;
+  margin: auto;
+  display: flex;
+  border-radius: 40px;
+}
+.project-box-main {
+  width: 90%;
+  display: block;
+  margin: auto;
+  border-radius: 40px;
+}
+#laptop {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -200px;
+  left: 100px;
+}
+.project-box img {
+  display: block;
+  margin-left: auto;
+  margin-right: 200px;
+  width: 23%;
+}
+
+.line {
+  display: block;
+  margin: auto;
+  height: 45px;
+  width: 3px;
+  background: #2e2d2f;
+}
+
+.skinnybox {
+  display: block;
+  width: 4%;
+  min-width: 30px;
+  height: 30vh;
+  margin-right: auto;
+  margin-left: 6%;
+}
+.smallbox {
+  display: block;
+  width: fit-content;
+  max-width: 50%;
+  margin: auto;
+}
+.smallbox2 {
+  display: block;
+  width: fit-content;
+  max-width: 50%;
+}
+
+header li {
+  display: inline;
+  margin: 10px;
+}
+header a {
+  text-decoration: none;
+  color: #eb8c66;
+  font-size: 1.2rem;
+  padding: 7px;
+  border-radius: 30px;
+  transition: 1s;
+}
+header a:hover {
+  background: rgba(61, 49, 91, 0.575);
+  transform: scale(2);
+}
+header #mybutton {
+  text-align: left;
+  padding: 10px;
+  background: none;
+  border: solid 2px #eb8c66;
+  font-size: 1rem;
+  color: #2e2d2f;
+  border-radius: 30px;
+  transition: 1s;
+}
+
+header #mybutton:hover {
+  background: #2e2d2f;
+  color: #eb8c66;
+  border-radius: 30px;
+  transform: scale(2);
+}
+
+#navcontainer {
+  display: block;
+  padding-top: 30px;
+  margin-left: auto;
+  width: fit-content;
+}
+
+section h1,
+h2 {
+  margin: 5px;
+}
+section {
+  border-bottom: var(--orange-color) solid 0.5px;
+}
+#hello {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #eb8c66;
+}
+#name {
+  font-size: 3rem;
+  color: #2e2d2fe0;
+}
+#full-stack {
+  text-align: left;
+  color: var(--black-color);
+  font-size: 1.8rem;
+}
+#shortsummary {
+  text-indent: 35px;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: var(--black-color);
+}
+#internship {
+  font-weight: bold;
+}
+section .container {
+  padding-top: 25px;
+  margin-bottom: 100px;
+}
+.skinnybox img {
+  display: block;
+  width: 100%;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.skinnybox img:hover {
+  border-radius: 50%;
+  background: rgb(167, 165, 198);
+  background: radial-gradient(
+    circle,
+    rgb(138, 134, 190) 50%,
+    rgba(61, 49, 91, 1) 100%
+  );
+  border: var(--orange-color) solid 0px;
+  animation: shadow-pulse-hover2 2s infinite;
+}
+
+#cloud {
+  width: 21%;
+  display: block;
+  margin-left: auto;
+  margin-top: 70px;
+  animation: cloudemovement 1.2s ease-in-out 0s infinite alternate forwards
+    running;
+}
+
+@keyframes cloudemovement {
+  0% {
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+.smallbox2 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  transition: 1.5s;
+  border-radius: 40px;
+  padding: 20px;
+
+  background: #5f50858a;
+}
+.smallbox2 p {
+  color: var(--darkclack-color);
+}
+#aboutme {
+  color: var(--orange-color);
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.smallbox2:hover {
+  /*animation: zoom 0.75s ease-in-out 0s 1 alternate forwards;*/
+  transform: scale(1.25);
+  animation: shadow-pulse-hover 2.5s 1;
+}
+#box2 {
+  margin-left: auto;
+}
+
+@keyframes ani {
+  0%,
+  25% {
+    background: #eb8c66;
+  }
+  50% {
+    background: #ee8157;
+  }
+  75% {
+    background: #f57d4e;
+  }
+  100% {
+    background: #f57543;
+  }
+}
+#contact {
+  text-decoration: none;
+}
+
+.example-2 {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 80px;
+  width: 130px;
+  height: 60px;
+  font: 10px/55px "Barlow Semi Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--orange-color);
+  text-align: center;
+  background: var(--black-color);
+  border: none;
+  border-radius: 40px;
+  animation: shadow-pulse 3s infinite;
+  transition: 1s;
+}
+#test {
+  position: relative;
+  top: 2px;
+}
+.example-2:hover {
+  transform: scale(1.2);
+  background: var(--darkclack-color);
+  animation: shadow-pulse-hover 2s infinite;
+}
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+@keyframes shadow-pulse-hover {
+  0% {
+    box-shadow: 0 0 0 0px #eb8c6656;
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+@keyframes shadow-pulse-hover2 {
+  0% {
+    box-shadow: 0 0 0 0px #eb8c6656;
+  }
+  100% {
+    box-shadow: 0 0 0 13px rgba(0, 0, 0, 0);
+  }
+}
+#c2 h2 {
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: fit-content;
+  color: var(--darkclack-color);
+  margin-top: 70px;
+  font-size: 2.2rem;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 40px;
+}
+#nature {
+  width: 31%;
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-top: -230px;
+  margin-right: 10%;
+  padding-bottom: 15px;
+}
+#brainstorm {
+  width: 23%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -300px;
+}
+#box3 {
+  position: relative;
+  top: -250px;
+  margin-bottom: 0;
+}
+#cloud2 {
+  width: 31%;
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-top: -250px;
+}
+main {
+  border-bottom: var(--orange-color) solid 1px;
+}
+
+.newcontainer {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+section h2 {
+  text-align: center;
+}
+.container h4 {
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+#techiveworkedwith {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  color: #2e2d2fe0;
+}
+#webdev {
+  text-align: center;
+}
+#backend {
+  text-align: center;
+}
+
+.lanbox img {
+  display: block;
+  margin: auto;
+}
+#html img {
+  width: 80%;
+}
+#css img {
+  width: 80%;
+}
+#js img {
+  width: 116%;
+  position: relative;
+  top: 11%;
+  right: 20px;
+}
+#js h5 {
+  margin-top: 50px;
+}
+#cpp img {
+  width: 55%;
+  margin-top: 5%;
+}
+#cpp h5 {
+  margin-top: 5%;
+}
+#python img {
+  width: 70%;
+}
+#swift img {
+  width: 70%;
+}
+.lanbox {
+  width: 30%;
+  margin-bottom: 60px;
+}
+h4 {
+  font-size: 24px;
+  color: var(--black-color);
+}
+h5 {
+  text-align: center;
+  font-size: 14px;
+  color: var(--black-color);
+}
+footer {
+  text-align: center;
+  color: rgba(43, 43, 43, 0.9);
+}
+
+footer .container {
+  border-top: rgba(43, 43, 43, 0.616) solid 1px;
+}
+
+#project h2 {
+  text-align: left;
+  color: var(--darkclack-color);
+}
+#projecttitle h2 {
+  text-align: center;
+}
+.thinbox {
+  width: 50%;
+  border: black solid 1px;
+  border-radius: 40px;
+  height: 1.4vh;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.thinbox2 {
+  width: 50%;
+  background: var(--orange-color);
+  border-radius: 40px;
+  height: 1vh;
+}
+#skill-level {
+  font-size: 10px;
+  color: #2e2d2fb9;
+}
+#html .thinbox2 {
+  width: 84%;
+  background: var(--orange-color);
+  border-radius: 40px;
+  height: 1.2vh;
+}
+#css .thinbox2 {
+  width: 80%;
+  background: var(--orange-color);
+  border-radius: 40px;
+  height: 1.2vh;
+}
+#js .thinbox2 {
+  width: 65%;
+  background: var(--orange-color);
+  border-radius: 40px;
+  height: 1.2vh;
+}
+#cpp .thinbox2 {
+  width: 90%;
+  background: var(--orange-color);
+  border-radius: 40px;
+  height: 1.2vh;
+}
+#python .thinbox2 {
+  width: 60%;
+  background: var(--orange-color);
+  border-radius: 40px;
+  height: 1.2vh;
+}
+#swift .thinbox2 {
+  width: 60%;
+  background: var(--orange-color);
+  border-radius: 40px;
+  height: 1.2vh;
+}
