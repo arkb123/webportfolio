@@ -17,6 +17,7 @@ body {
     rgb(138, 134, 190) 50%,
     rgba(61, 49, 91, 1) 100%
   );
+  overflow-x: hidden;
 }
 
 #temp {
@@ -40,18 +41,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.info-box {
-  width: 40%;
-  max-height: 360px;
-  display: block;
-  margin-top: 6%;
-  margin-left: 10%;
-  background: #5f50858a;
-  -webkit-box-shadow: 1px 0px 42px 27px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 1px 0px 42px 27px rgba(0, 0, 0, 0.5);
-  box-shadow: 1px 0px 42px 27px rgba(0, 0, 0, 0.5);
-  border-radius: 40px;
-}
+
 .info-box h3 {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -62,33 +52,6 @@ body {
   font-size: 1.2rem;
   margin: 20px;
   color: var(--darkclack-color);
-}
-.project-box {
-  width: 90%;
-  display: block;
-  margin: auto;
-  display: flex;
-  border-radius: 40px;
-}
-.project-box-main {
-  width: 90%;
-  display: block;
-  margin: auto;
-  border-radius: 40px;
-}
-#laptop {
-  width: 50%;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  top: -200px;
-  left: 100px;
-}
-.project-box img {
-  display: block;
-  margin-left: auto;
-  margin-right: 200px;
-  width: 23%;
 }
 
 .line {
@@ -101,8 +64,9 @@ body {
 
 .skinnybox {
   display: block;
-  width: 4%;
-  min-width: 30px;
+  width: 60px;
+  /* min-width: 4%; */
+  /* min-width: 30px; */
   height: 30vh;
   margin-right: auto;
   margin-left: 6%;
@@ -111,11 +75,13 @@ body {
   display: block;
   width: fit-content;
   max-width: 50%;
+  min-width: 480px;
   margin: auto;
 }
 .smallbox2 {
   display: block;
-  width: fit-content;
+  width: 45%;
+  min-width: 45%;
   max-width: 50%;
 }
 
@@ -134,6 +100,7 @@ header a {
 header a:hover {
   background: rgba(61, 49, 91, 0.575);
   transform: scale(2);
+  text-shadow: 0px 0px 3px rgba(238, 238, 238, 0.534);
 }
 header #mybutton {
   text-align: left;
@@ -151,6 +118,7 @@ header #mybutton:hover {
   color: #eb8c66;
   border-radius: 30px;
   transform: scale(2);
+  text-shadow: 0px 0px 10px #eee;
 }
 
 #navcontainer {
@@ -165,7 +133,7 @@ h2 {
   margin: 5px;
 }
 section {
-  border-bottom: var(--orange-color) solid 0.5px;
+  border-bottom: var(--orange-color) solid 0.1px;
 }
 #hello {
   text-align: left;
@@ -187,9 +155,7 @@ section {
   font-size: 1rem;
   color: var(--black-color);
 }
-#internship {
-  font-weight: bold;
-}
+
 section .container {
   padding-top: 25px;
   margin-bottom: 100px;
@@ -236,22 +202,44 @@ section .container {
   transition: 1.5s;
   border-radius: 40px;
   padding: 20px;
-
   background: #5f50858a;
+  box-shadow: 10px 5px 50px rgba(0, 0, 0, 0.45);
 }
-.smallbox2 p {
+.smallbox2 li {
   color: var(--darkclack-color);
+  list-style: none;
+  padding-bottom: 2px;
+}
+.job {
+  margin-bottom: 15px;
+}
+#school-name {
+  font-size: 120%;
+}
+#job-name {
+  list-style: circle;
+}
+#courses {
+  text-indent: 16px;
+  list-style: circle;
 }
 #aboutme {
   color: var(--orange-color);
   margin-bottom: 25px;
   font-size: 1.8rem;
 }
+.smallbox2 p {
+  color: var(--darkclack-color);
+}
 
 .smallbox2:hover {
   /*animation: zoom 0.75s ease-in-out 0s 1 alternate forwards;*/
-  transform: scale(1.25);
-  animation: shadow-pulse-hover 2.5s 1;
+  transform: scale(1.2);
+  animation: shadow-pulse-hover 2s 1;
+  box-shadow: none;
+}
+.smallbox2:hover h3 {
+  text-shadow: 0px 0px 7px rgba(238, 238, 238, 0.45);
 }
 #box2 {
   margin-left: auto;
@@ -302,6 +290,7 @@ section .container {
   transform: scale(1.2);
   background: var(--darkclack-color);
   animation: shadow-pulse-hover 2s infinite;
+  text-shadow: 0px 0px 10px #eee;
 }
 @keyframes shadow-pulse {
   0% {
@@ -327,19 +316,16 @@ section .container {
     box-shadow: 0 0 0 13px rgba(0, 0, 0, 0);
   }
 }
-#c2 h2 {
+#c22 h2 {
   text-align: center;
   display: block;
   margin: auto;
   width: fit-content;
   color: var(--darkclack-color);
-  margin-top: 70px;
   font-size: 2.2rem;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 40px;
+}
+#c22 {
+  padding-top: 70px;
 }
 #nature {
   width: 31%;
@@ -372,6 +358,19 @@ section .container {
 }
 main {
   border-bottom: var(--orange-color) solid 1px;
+  background: linear-gradient(
+    290deg,
+    rgba(63, 51, 93, 0.85) 50%,
+    rgba(61, 49, 91, 0.35) 100%
+  );
+}
+#card-section {
+  background: rgb(63, 51, 93);
+  background: linear-gradient(
+    340deg,
+    rgba(63, 51, 93, 0.85) 50%,
+    rgba(61, 49, 91, 0.35) 100%
+  );
 }
 
 .newcontainer {
@@ -386,11 +385,18 @@ section h2 {
   margin-bottom: 50px;
   margin-top: 70px;
 }
+#skills {
+  color: var(--black-color);
+  position: relative;
+  top: 90px;
+  font-size: 20px;
+}
 #techiveworkedwith {
   text-align: center;
   margin-top: 120px;
-  margin-bottom: 100px;
-  color: #2e2d2fe0;
+  margin-bottom: 40px;
+  color: var(--orange-color);
+  text-shadow: 2px 0px 2px rgba(255, 255, 255, 0.24);
 }
 #webdev {
   text-align: center;
@@ -402,34 +408,6 @@ section h2 {
 .lanbox img {
   display: block;
   margin: auto;
-}
-#html img {
-  width: 80%;
-}
-#css img {
-  width: 80%;
-}
-#js img {
-  width: 116%;
-  position: relative;
-  top: 11%;
-  right: 20px;
-}
-#js h5 {
-  margin-top: 50px;
-}
-#cpp img {
-  width: 55%;
-  margin-top: 5%;
-}
-#cpp h5 {
-  margin-top: 5%;
-}
-#python img {
-  width: 70%;
-}
-#swift img {
-  width: 70%;
 }
 .lanbox {
   width: 30%;
@@ -476,43 +454,293 @@ footer .container {
   border-radius: 40px;
   height: 1vh;
 }
+
+@keyframes skill-anime {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 #skill-level {
   font-size: 10px;
   color: #2e2d2fb9;
-}
-#html .thinbox2 {
-  width: 84%;
-  background: var(--orange-color);
   border-radius: 40px;
-  height: 1.2vh;
+  width: fit-content;
+  display: block;
+  margin: auto;
+  animation: skill-anime 3s infinite;
 }
-#css .thinbox2 {
+
+/* section for project */
+#project h3 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 40px;
+  margin-bottom: 50px;
+}
+.project-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.prog-item {
+  width: 300px;
+  height: 30vh;
+  background: salmon;
+  border: black solid;
+}
+
+/* Code for the cards  */
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  top: -90px;
+  left: 40%;
+  width: 300px;
+  height: 500px;
+  perspective: 900px;
+}
+.newcontainerr {
+  display: block;
+  margin: auto;
+}
+.newcontainer {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  box-shadow: #2e2d2f;
+  animation: entry 1s linear 1;
+}
+
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+}
+
+#c1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 0;
+}
+
+#c2 {
+  left: -100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.newcontainer:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: 0.5s all ease;
+  z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(to top, #eba65b 30%, #d99267 100%);
+}
+#testpic {
   width: 80%;
-  background: var(--orange-color);
-  border-radius: 40px;
-  height: 1.2vh;
+  display: block;
+  margin: auto;
 }
-#js .thinbox2 {
-  width: 65%;
-  background: var(--orange-color);
-  border-radius: 40px;
-  height: 1.2vh;
-}
-#cpp .thinbox2 {
-  width: 90%;
-  background: var(--orange-color);
-  border-radius: 40px;
-  height: 1.2vh;
-}
-#python .thinbox2 {
+.cpp {
   width: 60%;
-  background: var(--orange-color);
-  border-radius: 40px;
-  height: 1.2vh;
+  display: block;
+  margin: auto;
+  margin-top: 7.5%;
 }
-#swift .thinbox2 {
-  width: 60%;
-  background: var(--orange-color);
-  border-radius: 40px;
-  height: 1.2vh;
+#i1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+#i2 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+span {
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  height: 50%;
+  left: 0%;
+  width: 100%;
+}
+
+.sun1 {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 10px #fff;
+}
+
+.st4 {
+  fill: #f8c56f;
+  opacity: 1;
+}
+
+.st5,
+.st7 {
+  fill: #fff;
+}
+
+#sh2 {
+  opacity: 0.5;
+}
+
+#sh3 {
+  opacity: 0.3;
+}
+
+.st6 {
+  fill: #59476f;
+}
+
+.st10 {
+  fill: #c5a7e5;
+  stroke: #222;
+}
+
+.st11 {
+  stroke: #212121;
+  opacity: 0.5;
+}
+
+#sh1 {
+  fill: #f8c56f;
+  opacity: 0.4;
+}
+
+.st0 {
+  fill: #a25a62;
+  stroke: none;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: none;
+  stroke: #a25a62;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  fill: #cd775c;
+}
+
+.st3 {
+  fill: #fff;
+  opacity: 0.3;
+}
+
+.story {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  height: 55%;
+  width: 100%;
+  background: linear-gradient(to bottom, #eba65b 0%, #d99267 40%);
+  z-index: 30;
+}
+
+#s1 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+}
+
+#s2 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+}
+
+.info {
+  position: absolute;
+  top: 10%;
+}
+#card-name {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+#card-info {
+  font-size: 14px;
+  color: #fff;
+  padding: 0px 20px 20px 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.page {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  left: 0%;
+  height: 20%;
+  z-index: 30;
+}
+
+@keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
 }
