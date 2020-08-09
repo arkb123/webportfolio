@@ -16,13 +16,23 @@
   </head>
 </html>
 <body>
+  <script>
+    window.onload=function(){
+    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        alert("Visit this on a Computer for Better View");              
+    } else {
+
+    }
+  }
+  </script>
   <div id="temp">
     <header>
       <div class="container">
         <ul id="navcontainer">
           <li><a href="#">about</a></li>
           <li><a href="#project">projects</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="#" onclick="myFunction()">contact</a></li>
           <li><a target="_blank" href="/img/as.PDF" id="mybutton">resume</a></li>
         </ul>
       </div>
@@ -50,9 +60,63 @@
           <p id="shortsummary">
             My name is Aakarshan Bhandari, and I am a full-stack software developer. Currently, a student at California State University, Chico, majoring in Computer Science. Passionate about software engineering and have a results-oriented mindset. Experienced with both front-end and back-end software development. I have strong leadership abilities and also an excellent communicator. Quick and resourceful learner; able to pick up new material efficiently. 
           </p>
-          <a id="contact" href="#"
+          <a id="contact" onclick="myFunction()" href="#"
             ><div class="example-2"><p id="test">get in contact</p></div></a
           >
+          <div id="testtt" class="contactBox-show">
+              <div class="form-style-3">
+                <form
+                                action="https://formspree.io/xdowopnl"
+                                method="POST"
+                                enctype="multipart/form-data"
+                >
+                  <ul class="form-style-1">
+                        <li><label>Full Name <span class="required">*</span></label><input type="text" name="first-name" class="field-divided" placeholder="First" /> <input type="text" name="last-name" class="field-divided" placeholder="Last" /></li>
+                        <li>
+                            <label>Email <span class="required">*</span></label>
+                            <input placeholder="your email" type="email" name="email from" class="field-long" />
+                        </li>
+                        <li>
+                            <label>Subject</label>
+                            <select name="subject" class="field-select">
+                            <option value="question ">general question</option>
+                            <option value="interview">set up interview</option> 
+                            <option value="other">other</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>Your Message <span class="required">*</span></label>
+                            <textarea placeholder="message" name="message" id="field5" class="field-long field-textarea"></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" value="Submit" />
+                        </li>
+                    </ul>
+                </form>
+                </div>
+          </div>
+            <script>
+              function myFunction() {
+
+            var btn = document.getElementById("test");
+            var x = document.getElementById("testtt");
+            //to make it fancier
+            if (btn.value == "get in contact") {
+                btn.value = "click to close";
+                btn.innerHTML = "click to close";
+            }
+            else {
+                btn.value = "get in contact";
+                btn.innerHTML = "get in contact";
+            }
+            //this is what you're looking for
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+            </script>
         </div>
         <img
           id="cloud"
@@ -91,6 +155,7 @@
               <ul>
                 <li id="courses">Data Structures and Algorithm 1 (csci 111)</li>
                 <li id="courses">Data Structures and Algorithm 2 (csci 211)</li>
+                <li id="courses">Introduction to Database (cnis 370)</li>
               </ul>
             </li>
           </ul>
@@ -612,10 +677,17 @@
     </div>
     </section>
   <section id="project">
-    <h3>personal projects</h3>
+    <h3>Personal projects</h3>
     <div class="project-container">
-      <div class="prog-item">1</div>
-      <div class="prog-item">2</div>
+      <div class="flex-project-container">
+        <div class="prog-item item1"><img src="/mockups/rs1.png" alt=""></div>
+        <div class="prog-item item2">
+          <a href="#"><h4>Rap Surge</h4></a>
+          <p>Rap Surge is a web application created for helping the users discover new up and coming hip-hop artists who are slowly creating a name for themselves. Users can use this web app to discover new artists or to see how their favorite rapper rank among other up and coming rappers. Rappers are ranked based on their music stream numbers from that previous month. The more streams you get, the higher you will be on the list. Rap Surge also provides the user with few facts about the artist, such as where they are from, their record label, and some of their top songs. A unique feature of Rap surge is providing a prediction of the future success of these new artists. The idea for the prediction section is the same as how sports athletes get compared to other veteran athletes when they first get drafted. Lastly, another unique feature of Rap Surge is the alumni page. Once an artist is no longer consider a "new artist," they are moved to the alumni section. In the alumni section, we keep our potential prediction we had when the rapper was new so users can see if they outgrew their potential or never lived up to it. This web application was created using HTML, CSS, and JavaScript. </p>
+        </div>
+      </div>
+      <div class="prog-item item3"> <img src="/mockups/hand.png" alt=""></div>
     </div>
   </section>
 </body>
+
