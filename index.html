@@ -8,7 +8,7 @@
       href="img/devop.ico"
     />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
     <meta name="robots" content="index,follow" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
@@ -21,10 +21,8 @@
     var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
     if (mobile) {
         alert("Visit this on a Computer for Better View");              
-    } else {
-
-    }
-  }
+    };
+};
   </script>
   <div id="temp">
     <header>
@@ -118,7 +116,7 @@
         }
             </script>
         </div>
-        <img
+        <img 
           id="cloud"
           src="img/iconfinder-cloud-management-4341278_120575 (1).png"
           alt=""
@@ -130,14 +128,11 @@
     <main>
       <div class="container" id="c22">
         <h2>Info</h2>
-        <h5 id="skill-level">&#xab; hover for zoom &#xbb;</h5>
+        <h5 id="skill-level">&#xab; hover to zoom &#xbb;</h5>
         <div class="smallbox2">
           <h3 id="aboutme">more about me</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            dolore ratione, iusto a laudantium ad consequatur itaque illo ut
-            suscipit debitis unde dolor consectetur, quidem optio incidunt
-            deleniti facere ea fugiat id doloribus culpa nostrum.
+            I am currently a second-year student at Chico State University, majoring in computer science. I have been programming for about three years now. Though I started with back-end programming, my interests have now shifted to doing more front end work. I am very interested in full-stack web development. I am capable of doing UI design and creating mock-ups for apps using software such as Figma and Adobe XD. Since I am a computer science major, I also have a strong understanding of back-end work. I am familiar with working with and designing databases. I have experience with AWS and using its EC2 component.       
           </p>
         </div>
         <img
@@ -150,7 +145,7 @@
           <ul>
             <li id="school-name">California State University, Chico</li>
             <li>Bachelor of Science - Computer Science (class of '23)</li>
-            <li>Honors Program.<strong>GPA: 3.7 </strong></li>
+            <li>Honors Program.<strong>GPA: 3.6 </strong></li>
             <li>Courses taken:
               <ul>
                 <li id="courses">Data Structures and Algorithm 1 (csci 111)</li>
@@ -160,27 +155,33 @@
             </li>
           </ul>
         </div>
+        
         <img id="brainstorm" src="img/brain_storming_settings_thought_preferences_icon_124677.png" alt="">
         <div class="smallbox2" id="box3">
           <h3 id="aboutme">experience</h3>
           <ul>
             <div class="job">
               <li id="job-name">Children National Hospital (Intern)</li>
-              <li>Washington D.C</li>
+              <li>Washington D.C || June - August 2019</li>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, at consequatur cumque atque molestias animi nam laboriosam esse iste molestiae.</li>
             </div>
             <div class="job">
               <li id="job-name">SAHA (Technology tutor)</li>
-              <li>Berkeley, CA</li>
+              <li>Berkeley, CA || May - July 2018</li>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, at consequatur cumque atque molestias animi nam laboriosam esse iste molestiae.</li>
             </div>
           </ul>
         </div>
+
+        <div class="smallbox2" id="box4">
+        </div>
       </div>
+      </div>
+
     </main>
   </div>
   <section id="card-section">
-  <div class="container">
+  <div class="container tech-class">
     <h2 id="techiveworkedwith">Technologies i've worked with</h2>
     <h5 id="skill-level">&#xab; hover over the cards &#xbb;</h5>
   </div>
@@ -295,7 +296,8 @@
           <div class="info">
             <h3 id="card-name">CSS</h3>
             <p id="card-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo, minus et id voluptas praesentium deserunt doloribus ullam iure eveniet consequuntur tempore ab voluptatem fuga.
+              Knowledge of new CSS3 features. Good understanding of CSS flex-box and flex properties. Capable of creating good looking animations using CSS. 
+
             </p>
           </div>
         </div>
@@ -402,7 +404,8 @@
           <div class="info">
             <h3 id="card-name">Java-Script</h3>
             <p  id="card-info">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam odit doloribus esse ab beatae exercitationem similique accusamus delectus nulla, harum repellat consequuntur natus, ducimus recusandae.
+              Solid programming abilities using JavaScript. Strong understandings of JS frameworks such as React.js and Node.js.
+Experienced in creating Rest API. 
             </p>
           </div>
         </div>
@@ -419,9 +422,7 @@
           <div class="info">
             <h3 id="card-name">HTML</h3>
             <p  id="card-info">
-              The Leaning Tower of Pisa or simply the Tower of Pisa is the
-              campanile, or freestanding bell tower, of the cathedral of the
-              Italian city of Pisa, known worldwide for its unintended tilt
+              Knowledge of new HTML5 structure and features. Experience with creating cross-platform responsive web applications. Familiar with front-end frameworks such as React and Bootstrap.
             </p>
           </div>
         </div>
@@ -537,10 +538,7 @@
           <div class="info">
             <h3 id="card-name">Swift</h3>
             <p  id="card-info">
-              Built during a time when Egypt was one of the richest and most
-              powerful civilizations in the world. Their massive scale reflects
-              the unique role that the pharaoh played in ancient Egyptian
-              society.
+              Basic knowledge of Swift. Some experience in creating IOS apps. Filimar with Swift UI.
             </p>
           </div>
         </div>
@@ -647,9 +645,7 @@
           <div class="info">
             <h3 id="card-name">Python</h3>
             <p  id="card-info">
-              Stonehenge is a prehistoric monument in Wiltshire, England. It was
-              constructed in several stages between 3000 and 1500 B.C.,
-              spanninng to the Bronze Age.
+              Solid understanding of programming in Python. Can write back end for websites using python. Some experience in using the django framework. 
             </p>
           </div>
         </div>
@@ -666,9 +662,7 @@
           <div class="info">
             <h3 id="card-name">C++</h3>
             <p  id="card-info">
-              The Leaning Tower of Pisa or simply the Tower of Pisa is the
-              campanile, or freestanding bell tower, of the cathedral of the
-              Italian city of Pisa, known worldwide for its unintended tilt
+              C++ is my go-to back-end programing language. Strong fundamentals skills in data structures and algorithms. Experienced with C++ Standard Template Library. Solid understanding of Object-oriented programing.
             </p>
           </div>
         </div>
@@ -690,4 +684,3 @@
     </div>
   </section>
 </body>
-
