@@ -315,6 +315,7 @@ section .container {
   border-radius: 40px;
   animation: shadow-pulse 3s infinite;
   transition: 1s;
+  cursor: pointer;
 }
 #test {
   position: relative;
@@ -956,6 +957,10 @@ select {
 
 
 @media only screen and (max-device-width: 480px) {
+    html, body{
+      max-width: 100%;
+      overflow-x: hidden;
+    }
     .container{
       width: 100%;
     }
